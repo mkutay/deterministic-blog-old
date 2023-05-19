@@ -6,6 +6,10 @@
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" href="/assets/css/mode.scss"> -->
+
 {% if site.show_frame %}
 <link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}">
 {% else %}
@@ -29,7 +33,8 @@
 
 <header>
   <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
-  {% include menu.html menu=pages %}
+  {% include menu-navbar.html menu=pages %}
+  <!-- <script src="/assets/js/main.js"></script> -->
 </header>
 
 {{ content }}
@@ -37,7 +42,7 @@
 {% if site.external %}
 <footer>
   <div>{{ site.description | default: site.title }}</div>
-  {% include menu.html menu=site.external %}
+  {% include menu-footer.html menu=site.external %}
 </footer>
 {% endif %}
 
