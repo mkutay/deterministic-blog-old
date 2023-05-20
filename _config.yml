@@ -10,14 +10,14 @@ date_format: "%B %d, %Y"
 
 # Menu
 
-navigation:                # accepts {file, title, url, icon, sidebaricon}
+navigation: # file, url, title
   - {file: "about.md", url: "/about/", title: "About"}
   - {file: "archive.html", url: "/archive/", title: "Archive"}
 
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: "Mail", icon: "envelope", url: "mailto:mkutaybzkrt01101011@gmail.com", include_title: false}
+external: # for available icons see fontawesome.com/icons
+  # - {title: "Mail", icon: "envelope", url: "mailto:mkutaybzkrt01101011@gmail.com", include_title: false}
   - {title: "Github", icon: "github", url: "https://github.com/MKutay", include_title: false}
-  - {title: "Subscribe", icon: "rss", url: "/feed.xml", include_title: false}
+  - {title: "Subscribe", icon: "envelope", url: "https://deterministic-blog.beehiiv.com/subscribe", include_title: false}
   - {title: "Sponsor Me", icon: "heart", url: "https://github.com/sponsors/MKutay?o=esb", include_title: true}
 
 comments:
