@@ -1,16 +1,39 @@
 {%- assign posts = paginator.posts | default: site.posts -%}
+<!-- this shows all of the excerpts on the home page -->
 {% for post in posts %}
   <article>
-    {% include meta.html post=post preview=true %}
+    {% include excerpt-meta.html post=post %} <!-- this is for the title and the date of the post -->
+
     {{ post.excerpt }}
-    <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
+
+    <div class="more">
+      <a href="{{ post.url | relative_url }}">
+        read more
+      </a>
+    </div>
   </article>
 {% endfor %}
 
+<!-- if there are more than one page of excerpts there will be older/newer posts buttons -->
 {% if paginator.total_pages > 1 %}
   <footer>
-    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« newer posts</a>{% else %}<span></span>{% endif %}
-    <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">older posts »</a>{% else %}<span></span>{% endif %}
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">
+        « newer posts
+      </a>
+    {% else %}
+      <span></span>
+    {% endif %}
+
+    <span>
+      page {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}">
+        older posts »
+      </a>
+    {% else %}
+      <span></span>
+    {% endif %}
   </footer>
 {% endif %}
