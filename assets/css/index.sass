@@ -7,20 +7,9 @@
   body > header, body > article, body > footer
     padding: 1.75em calc(40% - 17em)
 
-{% if site.minimal %}
-
-body > header
-  background: $nord0
-  color: $nord4
-  border-bottom: 1px solid reduce(14)
-
-{% else %}
-
 body > header
   box-shadow: 0 0 .6em rgba($nord0, 0.04)
   border-bottom: 1px solid reduce(14)
-
-{% endif %}
 
 body > footer
   box-shadow: 0 0 .6em rgba($nord0, 0.04) inset

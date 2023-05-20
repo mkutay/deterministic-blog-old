@@ -3,9 +3,6 @@
   {%- assign node = site.pages | where: "name", item.file | first -%}
   {%- assign url = item.url | default: node.url -%}
   {%- assign title = item.title | default: node.title -%}
-  <a href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
-    {{ title }}
-  </a>
+  <a href="{{ url | relative_url }}">{{ title }}</a>
 {%- endfor -%}
-<!-- <button id="change-theme-btn"><i class="fas fa-sun"></i></button> -->
 </nav>
