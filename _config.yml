@@ -5,6 +5,7 @@ permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
+google_analytics: G-Z62CEK3M0E
 
 # Layout
 
