@@ -3,17 +3,6 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 <head>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SERZKFE2BV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-SERZKFE2BV');
-  </script>
-
   <title>
     {% if page.title %}
       {{ page.title | escape }} |
@@ -56,14 +45,14 @@
 
   {{ content }}
 
-  {% if site.external %}
-    <footer>
-      <div>
-        {{ site.description | default: site.title }}
-      </div>
-      {% include menu-footer.html menu=site.external %}
-    </footer>
-  {% endif %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SERZKFE2BV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SERZKFE2BV');
+  </script>
 
 </body>
 
