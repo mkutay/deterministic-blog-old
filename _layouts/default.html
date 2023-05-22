@@ -21,7 +21,7 @@
   {% if site.plugins contains "jekyll-feed" %}
     <link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">
   {% endif %}
-  
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SERZKFE2BV"></script>
   <script>
@@ -31,6 +31,7 @@
 
     gtag('config', 'G-SERZKFE2BV');
   </script>
+
 </head>
 
 <body>
@@ -54,14 +55,14 @@
 
   {{ content }}
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SERZKFE2BV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-SERZKFE2BV');
-  </script>
+  {% if site.external %}
+    <footer>
+      <div>
+        {{ site.description | default: site.title }}
+      </div>
+      {% include menu-footer.html menu=site.external %}
+    </footer>
+  {% endif %}
 
 </body>
 
