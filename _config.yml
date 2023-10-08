@@ -18,8 +18,9 @@ navigation: # file, url, title
 external: # for available icons see fontawesome.com/icons
   # - {title: "Mail", icon: "envelope", url: "mailto:mkutaybzkrt01101011@gmail.com", include_title: false}
   - {title: "Github", icon: "github", url: "https://github.com/MKutay", include_title: false}
-  - {title: "Subscribe", icon: "envelope", url: "https://deterministic-blog.beehiiv.com/subscribe", include_title: true}
+  - {title: "Email Me", icon: "envelope", url: "mailto:hello@mkutay.dev", include_title: true}
   - {title: "Sponsor Me", icon: "heart", url: "https://github.com/sponsors/MKutay?o=esb", include_title: true}
+
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
