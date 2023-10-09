@@ -20,6 +20,7 @@ external: # for available icons see fontawesome.com/icons
   - {title: "Github", icon: "github", url: "https://github.com/MKutay", include_title: false}
   - {title: "Email Me", icon: "envelope", url: "mailto:hello@mkutay.dev", include_title: true}
   - {title: "Sponsor Me", icon: "heart", url: "https://github.com/sponsors/MKutay?o=esb", include_title: true}
+  - {title: "Feed", icon: "rss", url: "https://blog.mkutay.dev/feed.xml", include_title: true}
 
 
 comments:
