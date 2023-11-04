@@ -1,6 +1,6 @@
 title: "Deterministic Blog"
 author: "Mehmet Kutay Bozkurt"
-description: "Made with <b style=\"color: #bf616a;\">&lt;3</b>"
+description: "Made with <b style=\"color: #f38ba8;\">&lt;3</b>"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"

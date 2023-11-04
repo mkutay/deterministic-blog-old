@@ -5,7 +5,7 @@ layout: post
 In Python, there is something that even the creator of Python despises. The *thing* that I am referring to is the "while, else" statement. Some context is that I was in Cambridge in a computer science course and we had to create some text-based game, and I—unironically—used the forbidden technique, the while else statement. The section of code that uses while else is given below, and for the interested, the full code is at the bottom of the page.
 
 
-{% highlight js %}
+```python
 while encounter_count < 4:
   print("You reach a fork in the cave.")
   path = choose_path()
@@ -28,7 +28,7 @@ while encounter_count < 4:
   print()
 else:
   print("You couldn't find the treasure in time and starved to death.")
-{% endhighlight %}
+```
 
 Here, the logic is that when the player cannot find the treasure in time (four encounters), they die because of starvation, and they lose the game. I implemented this using a while loop that loops the game logic while the encounter count is less than four. In the game logic, you venture into different paths in the cave, and you can stumble upon many things—such as a trap, a wolf, and the treasure. In many cases, you will survive and go to the next round, but sometimes you will get eaten by the wolves or find the treasure and escape the cave. In cases where the game finishes, the loop will be terminated by the "break" keyword. When the encounter count is greater or equal to four, instead of writing another if statement with a break inside, I decided to use the while-else statement. What it does is that when the loop condition inside the loop terminates _false_, the else statement is triggered, giving us the prompt "You couldn't find the treasure in time and starved to death." In short, that print statement will not get executed if a break of the loop is triggered, but it will be executed as long as the loop is exited normally—namely, the condition resulting in _false_.
 
@@ -37,7 +37,7 @@ This is the basic premise of the "while else" statement. I do not think that thi
 ---
 
 The full code for the interested:
-{% highlight python %}
+```python
 import time
 import random
 
@@ -105,6 +105,13 @@ def explore_cave():
 
 if __name__ == "__main__":
   explore_cave()
-{% endhighlight %}
+```
 
 Also, I am now kind of a [Catppuccin](https://github.com/catppuccin/catppuccin) fan, so should I change the colour scheme of this blog to suit that, or just leave it as is? I might have to experiment with the colours from Catppuccin to have the perfect set.
+
+> amogus
+
+| Variable             | Details                                                             | Method of Measurement                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| -------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Independent Variable | Different apple cultivar (Granny Smith, Golden Delicious, Starking) | Apple juices that have already been pumped at home (see Figure 2) are filtered through coffee filters to get rid of any impurities in the juice. Additionally, for every titration, 15 mL of apple juice and 100 mL of distilled water are used to dilute the apple juice to create a solution to be used in the titration process. Furthermore, seven trials will be done for every different apple cultivar.                                                   |
+| Dependent Variable   | Concentration of malic acid (M)                                     | The concentration of malic acid in apple juice solutions can be found using the average titer needed to neutralise the malic acid. The molar ratio of malic acid to sodium hydroxide solution is going to be 2:1. As a result, moles of malic acid in apple juices can be calculated and put into the equation: concentration = moles / volume to find the concentrations of malic acid. This will be done using the Excel software for each of the trials. |                                                                                                                                                                                                                                                                                                                                                                                            |

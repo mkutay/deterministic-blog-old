@@ -1,6 +1,6 @@
 body
-  background: $nord0
-  color: $nord4
+  background: $base
+  color: $text
   font-family: $font-family
   font-weight: $font-weight
   font-size: $font-size
@@ -10,10 +10,6 @@ body
   -webkit-text-size-adjust: 100%
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-
-@media (prefers-color-scheme: light)
-  background: $nord4
-  color: $nord0
 
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
@@ -26,7 +22,7 @@ p
   font-size: 1.1em
 
 a
-  color: $nord9
+  color: $blue
   text-decoration: inherit
   &:hover
     text-decoration: underline
@@ -35,18 +31,18 @@ header a, footer a, aside a
   color: inherit
 
 header time
-  color: reduce(100)
+  color: $overlay2
 
 hr
-  border: 1px solid reduce(30)
+  border: 1px solid $surface0
   margin: 2em 0
 
 article:not(:last-of-type)
-  border-bottom: 1px solid reduce(14)
+  border-bottom: 1px solid $surface0
 
 blockquote
-  background: reduce(6)
-  border-left: 3px solid reduce(90)
+  background: $crust
+  border-left: 3px solid $maroon
   padding: 1px 1.5em
   opacity: .75
 
@@ -70,17 +66,17 @@ table
   overflow-y: scroll
   border-spacing: 1px
   border-radius: 2px
-  box-shadow: 0 0 0 1px reduce(12) inset
+  box-shadow: 0 0 0 1px $surface1 inset
 
 th, td
   padding: .5em 1em
-  box-shadow: 0 0 0 1px reduce(12)
+  box-shadow: 0 0 0 1px $surface1
 
 tr:hover, tr:nth-child(odd) td
-  background: reduce(4)
+  background: $mantle
 
 pre
-  background: reduce(12)
+  background: $maroon
   border-radius: 2px
   font-size: .8em
   margin: 1.5em 0
@@ -89,7 +85,7 @@ pre
 
 \:not(pre) > code
   font-size: .9em
-  background: reduce(15)
+  background: $lavender
   opacity: .7
   border-radius: 2px
   margin: 0 .1em
