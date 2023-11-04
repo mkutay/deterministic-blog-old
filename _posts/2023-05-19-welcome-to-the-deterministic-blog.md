@@ -10,7 +10,7 @@ mathematics, physics, and overall things that I love. I want this blog to be a p
 thoughts and ideas, and I want you, the viewer, to learn from and read what I write.
 
 
-I also love the Nord Theme (duh!) and anything related to it.
+I also love the Nord Theme (duh!) and anything related to it. (Now I love Catppuccin, not Nord Theme.)
 
 If you have anything to say to me, you can contact me through Discord and Twitter, which you can find 
 the information on my [website](https://www.mkutay.dev).
